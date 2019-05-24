@@ -1,0 +1,17 @@
+.IntroSection{
+    height: 700px;
+    width: 100vw;
+    top: -2em;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 500px){
+    .IntroSection{
+        max-width: 90vw;
+    }
+} 

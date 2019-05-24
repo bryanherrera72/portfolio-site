@@ -1,0 +1,21 @@
+.AboutGrid{
+    display:grid;
+    grid-template-columns: 10% auto 10%;
+}
+.AboutContent{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.AvatarImg{
+    height: 300px;
+    width: 300px;
+}
+.AboutRant{
+    max-width: 80vw;
+    font-size:1.5em;
+}

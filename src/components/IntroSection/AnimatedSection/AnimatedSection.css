@@ -1,4 +1,5 @@
 .AnimatedSection{
+    position:absolute;
     height:700px;
     width: 1440px;
     max-width: 1440px;
@@ -7,7 +8,17 @@
     align-items: center;
     justify-content: center;
     text-align:center;
+    font-size:2.5em
 }
 .typed-cursor{
-    font-size: 2.5em;
+    font-size: 1em;
 }
+@media(max-width: 500px){
+    .AnimatedSection{
+        font-size: 1.5em;
+    }
+    .typed-cursor{
+        font-size: 1.5em;
+    }
+}
+

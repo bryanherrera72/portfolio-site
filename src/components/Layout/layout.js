@@ -10,6 +10,7 @@ class Layout extends Component{
   }
 
   scrollEventHandler = ()=> {
+    console.log(window.scrollY);
     if(window.scrollY <= 10){
       if(this.state.viewAtTop != true)
         this.setState({viewAtTop: true});
@@ -30,7 +31,7 @@ class Layout extends Component{
   
   render(){
     return(
-      <div>
+      <div className = "Layout">
         <Header viewAtTop = {this.state.viewAtTop}/>
         <main className = "Content">{this.props.children}</main>
         <Footer/>

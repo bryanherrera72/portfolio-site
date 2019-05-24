@@ -13,15 +13,15 @@ const about = props => {
                         about
                     }
                 }
-            allFile(limit: 1 filter: {name: {eq: "BryanHerreraResume"} extension: { eq: "pdf" } }){
-                edges{
-                    node{
-                        name
-                        publicURL
+                allFile(limit: 1 filter: {name: {eq: "BryanHerreraResume"} extension: { eq: "pdf" } }){
+                    edges{
+                        node{
+                            name
+                            publicURL
+                        }
                     }
                 }
             }
-        }
             `}
             render = { data => (
                 <Layout>
@@ -35,7 +35,6 @@ const about = props => {
                             </div>
                             <br/>
                             <div className = "AboutResume">
-                            
                                 <SocialLink link = {data.allFile.edges[0].node.publicURL}>Download my Resume!</SocialLink>
                             </div>
                             <br/>

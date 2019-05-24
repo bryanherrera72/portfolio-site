@@ -1,10 +1,17 @@
 module.exports = {
   siteMetadata: {
     title: `{BH}`,
-    description: `My name is Bryan Herrera. I am a web developer based in Southern California`,
+    description: `My name is Bryan Herrera. I am a web developer based in Los Angeles, California`,
     author: `Bryan Herrera`,
-    about: `I am a web developer based in Los Angeles California.\n`+
-        `I like to build websites and web apps using the latest technology. When I\'m not doing that, you can find me walking around aimlessly looking for somewhere to belong.`
+    about: 
+        `I am a web developer based in Los Angeles, California.\n`+
+        `I build websites (or web apps, if you will) using the latest technology`+
+        ` to help my clients improve their online presence.\n\n`+
+        `When I\'m not doing that, you'll typically find me self teaching so I can keep up with the latest trends.`+
+        ` I also really enjoy playing drums, listening to music, and watching movies.\n\n`+
+        `In the fall of 2018 I graduated with a degree in computer science from California State University, Northidge.` +
+        ` I took a liking towards web development because it's a field that's always changing and growing so of course, I had to be a part of it.\n\n`+
+        ` If you're interested to see what I could offer, take a look at my resume using the link below. Additionally, you could reach me through the contact link above.`
   },
   plugins: [
     {

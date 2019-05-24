@@ -33,9 +33,9 @@ class TypingText extends Component{
             // unfortunately have to include this div for Typed to work 
             <div className = "TypingText" >
                 <span 
-                    style = {{'fontSize': '2.5em', 'whiteSpace':'pre'}} 
+                    style = {{ 'whiteSpace':'pre'}} 
                     ref = {(name)=>{this.name = name}}></span>
-                    <br/>
+                    
             </div>
         );
     }

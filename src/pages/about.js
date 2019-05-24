@@ -7,13 +7,21 @@ const about = props => {
     return (
         <StaticQuery
             query={graphql`
-            query SiteAboutQuery {
+            query {
                 site {
                     siteMetadata {
                         about
                     }
                 }
+            allFile(limit: 1 filter: {name: {eq: "BryanHerreraResume"} extension: { eq: "pdf" } }){
+                edges{
+                    node{
+                        name
+                        publicURL
+                    }
+                }
             }
+        }
             `}
             render = { data => (
                 <Layout>
@@ -27,7 +35,8 @@ const about = props => {
                             </div>
                             <br/>
                             <div className = "AboutResume">
-                                <SocialLink link = "#">Download My Resume!</SocialLink>
+                            
+                                <SocialLink link = {data.allFile.edges[0].node.publicURL}>Download my Resume!</SocialLink>
                             </div>
                             <br/>
                         </div>

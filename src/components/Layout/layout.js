@@ -10,8 +10,6 @@ class Layout extends Component{
   }
 
   scrollEventHandler = ()=> {
-    console.log(this.state.viewAtTop);
-    console.log(window.scrollY);
     if(window.scrollY <= 10){
       if(this.state.viewAtTop != true)
         this.setState({viewAtTop: true});

@@ -8,7 +8,7 @@ import IntroSection from '../components/IntroSection/IntroSection';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[`web developer`,`gatsby`, `react`, `portfolio`]} />
     {/* <ParticleCanvas/> */}
    {<IntroSection/>}
   </Layout>

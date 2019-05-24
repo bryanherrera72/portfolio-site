@@ -34,9 +34,11 @@ const about = props => {
                                 {data.site.siteMetadata.about}
                             </div>
                             <br/>
+                            <br/>
                             <div className = "AboutResume">
                                 <SocialLink link = {data.allFile.edges[0].node.publicURL}>Download my Resume!</SocialLink>
                             </div>
+                            <br/>
                             <br/>
                         </div>
 

@@ -19,13 +19,13 @@ const contact = props => {
                         <div>
                             <label htmlFor= "description">Description</label>
                             <textarea 
-                                rows="8" 
+                                rows="5" 
                                 cols="40" 
                                 name = "description" 
                                 id = "description"></textarea>
                         </div>
                         <div>
-                            <button className = "submit" type = "submit" style = {{"right": "0"}}></button>
+                            <button className = "Submit" type = "submit"></button>
                         </div>
 
                     </form>

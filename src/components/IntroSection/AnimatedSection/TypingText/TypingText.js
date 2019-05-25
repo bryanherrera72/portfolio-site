@@ -7,13 +7,13 @@ class TypingText extends Component{
     componentDidMount(){
         let typedOptions = {
             strings: [
-                'I\'m Bryan Herrera.^1500\nI love creating',
+                'I\'m Bryan Herrera.^1500\nI love creating.',
                 'I\'m Bryan Herrera.\nI love coding.',
                 'I\'m Bryan Herrera.\nI love learning.',
                 'I\'m Bryan Herrera.\nAll of the above.',
-                ':)^1000\nLet\'s chat.^2000\n&#65086;',
-                ':)\nLet\'s chat.\n',
-                ':)\nLet\'s chat.\n&#65086;'],
+                ':) ^1000\nLet\'s chat^2000\n&nbsp;&#65086;',
+                ':) \nLet\'s chat\n',
+                ':) \nLet\'s chat\n&nbsp;&#65086;'],
             typeSpeed: 45,
             backSpeed: 20,
             backDelay: 600,

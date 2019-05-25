@@ -1,0 +1,53 @@
+.Project{
+    max-width: 900px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*
+    Section containing Title and Image
+*/
+.TitleAndImg{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+}
+.Title{
+    font-size: 2em;
+}
+    /* images must be max 200x200 */
+.Img{
+    height: 200px;
+    width: 200px;
+}
+
+/*
+    Section containing the description and other things.
+*/
+
+.DescContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top: 40px;
+}
+.Description{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.TechUsed{
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+@media(max-width: 500px){
+    .Project{
+        flex-direction: column;
+    }
+}

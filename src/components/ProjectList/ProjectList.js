@@ -1,44 +1,37 @@
 import React from 'react';
 import Project from './Project/Project';
+import {StaticQuery, graphql} from 'gatsby';
 
-const projectList = props => {
-    let list = [];
-    let projectList = [
-        {
-            title: "Test 1",
-            imgTitle: "img url here",
-            description: `This is a test description to try and test the little testing panel test. Increasing the length
-                            of one of the descriptions so that I can see how it works when the amount of text gets really long.This is a test description to try and test the little testing panel test.This is a test description to try and test the little testing panel test.This is a test description to try and test the little testing panel test.`,
-            techUsed: ["This", "Will", "Contain", "Tech", "Used", "In", "The", "Project"]
-        },
-        {
-            title: "Test 2",
-            imgTitle: "img url here",
-            description: "This is a test description to try and test the little testing panel test.",
-            techUsed: ["This", "Will", "Contain", "Tech", "Used", "In", "The", "Project"] 
-        },
-        {
-            title: "Test 3",
-            imgTitle: "img url here",
-            description: "This is a test description to try and test the little testing panel test.",
-            techUsed: ["This", "Will", "Contain", "Tech", "Used", "In", "The", "Project"]  
-        },
-    ];
-    if(projectList){
-        list = projectList.map((project,index)=>{
-            return (<Project 
-                        key = {index}
-                        title={project.title} 
-                        imgTitle={project.imgTitle} 
-                        description={project.description}
-                        techUsed={project.techUsed}/>);
-        });
-    }
-    return (
-        <>
-            {list}
-        </>
-    );
-}
+const projectList = props => (
+    <StaticQuery 
+        query= {graphql`
+            query ProjectsQuery{
+                allProjectsJson{
+                    edges{
+                        node{
+                            title
+                            imgTitle
+                            description
+                            techUsed
+                        }
+                    }
+                }
+            }
+            
+        `}
+        render = {
+            data =>
+                data.allProjectsJson.edges.map((project, index)=>{
+                    return (<Project 
+                                key = {index}
+                                title={project.node.title} 
+                                
+                                imgSrc={project.node.imgTitle} 
+                                description={project.node.description}
+                                techUsed={project.node.techUsed}/>);
+                })
+            
+        }/>
+);
 
 export default projectList;

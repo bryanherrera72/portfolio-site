@@ -2,7 +2,9 @@ import React from 'react';
 import {StaticQuery, graphql} from 'gatsby';
 import "../styles/about.css";
 import Layout from '../components/Layout/layout';
+import Avatar from '../components/Avatar/Avatar';
 import SocialLink from '../components/common/SocialLink/SocialLink';
+import Image from '../components/image';
 const about = props => {
     return (
         <StaticQuery
@@ -29,7 +31,11 @@ const about = props => {
                        <div className = "AboutContent">
                             <h1 style = {{textAlign: 'center'}}>Hi, I'm Bryan!</h1>
                             <div className = "AvatarImg">
+                                <Avatar>
+                                    <Image imgFilename="geran-de-klerk-148428-unsplash.jpg"/>
+                                </Avatar>
                             </div>
+                            <br/>
                             <div className = "AboutRant">
                                 {data.site.siteMetadata.about}
                             </div>

@@ -1,11 +1,36 @@
 import React from 'react';
 import Layout from '../components/Layout/layout';
-const blog = props => {
+import PostList from '../components/PostList/PostList';
+import '../styles/blog.css';
+
+const blog = ({data}) => {
+    const { edges: posts } = data.allMarkdownRemark;
     return (
         <Layout>
-            <div></div>
+            <div className="PostList">
+                <PostList posts = {posts}/>
+            </div>
         </Layout>
-    );
+    )
 }
+
+export const blogListQuery = graphql`
+  query blogQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+          }
+        }
+      }
+    }
+  }
+`
+
 
 export default blog;

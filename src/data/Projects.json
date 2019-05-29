@@ -3,19 +3,19 @@
         "title": "This Website",
         "imgTitle": "my-site",
         "description": "I built this website using ReactJS and GatsbyJS. Additionally, it was deployed using Netlify",
-        "techUsed": ["ReactJS, GatsbyJS, HTML, CSS, Javascript, Netlify"]  
+        "techUsed": ["ReactJS, GatsbyJS, HTML, CSS, Javascript, Netlify, Git"]  
     },
     {
         "title": "Interactive One Sheet Austin Mahone",
         "imgTitle": "austin-mahone",
         "description": "An interactive one sheet for singer/songwriter Austin Mahone.",
-        "techUsed": ["HTML", "CSS", "Bootstrap", "Javascript"]
+        "techUsed": ["HTML", "CSS", "Bootstrap", "Javascript, AWS S3"]
     },
     {
         "title": "Interactive One Sheet Kiiara",
         "imgTitle": "kiiara",
         "description": "An interactive one sheet for singer/songwriter Kiiara. Just testing a longer description",
-        "techUsed": ["HTML", "CSS", "Bootstrap", "Javascript"] 
+        "techUsed": ["HTML", "CSS", "Bootstrap", "Javascript, AWS S3"] 
     }
     
 ]

@@ -10,7 +10,7 @@ const postList = props =>{
                     .filter(post => post.node.frontmatter.title.length > 0)
                     .map(({ node: post }) => {
                         return (
-                            <PostListItem post = {post}/>
+                            <PostListItem key={post.id} post = {post}/>
                             
                         )
                     })

@@ -32,7 +32,7 @@ const about = props => {
                             <h1 style = {{textAlign: 'center'}}>Hi, I'm Bryan!</h1>
                             <div className = "AvatarImg">
                                 <Avatar>
-                                    <Image imgFilename="geran-de-klerk-148428-unsplash.jpg"/>
+                                    <Image/>
                                 </Avatar>
                             </div>
                             <br/>

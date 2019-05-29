@@ -5,7 +5,8 @@ const contact = props => {
     return (
         <Layout>
             <div className = "Contact">
-                <div className = "FormContainer">
+                <p>Coming Soon! </p>
+                {/* <div className = "FormContainer">
                     <label htmlFor = "ContactForm"><h1>Contact</h1></label>
                     <form id = "ContactForm" className = "ContactForm">
                         <div>
@@ -29,7 +30,7 @@ const contact = props => {
                         </div>
 
                     </form>
-                </div>
+                </div> */}
             </div>
         </Layout>
     );

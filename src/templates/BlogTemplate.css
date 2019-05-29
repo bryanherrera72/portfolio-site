@@ -1,0 +1,13 @@
+.BlogPostContainer{
+    display:grid;
+    grid-template-columns: 10% auto 10%;
+}
+.BlogPost{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}

@@ -5,7 +5,7 @@ import './PostListItem.css';
 
 const postListItem = props => {
     return (
-        <div className="PostListItem" key={props.post.id}>
+        <div className="PostListItem" >
             <h1>
                 <Link to={props.post.frontmatter.path}>{props.post.frontmatter.title}</Link>
             </h1>
@@ -17,7 +17,7 @@ const postListItem = props => {
 
 postListItem.propTypes = {
     post: propTypes.shape({
-        id: propTypes.number.isRequired,
+        id: propTypes.string.isRequired,
         excerpt:propTypes.string.isRequired,
         frontmatter: propTypes.shape({
             title:propTypes.string,

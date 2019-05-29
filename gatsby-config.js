@@ -30,6 +30,8 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -61,13 +63,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    
     `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `bryans-site`,
+        name: `bryanhdev`,
         short_name: `bhdev`,
         start_url: `/`,
         background_color: `#2D3E36`,

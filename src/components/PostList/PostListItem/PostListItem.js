@@ -9,7 +9,7 @@ const postListItem = props => {
             <h1>
                 <Link to={props.post.frontmatter.path}>{props.post.frontmatter.title}</Link>
             </h1>
-            <h2>{props.post.frontmatter.date}</h2>
+            <h3>{props.post.frontmatter.date}</h3>
             <p>{props.post.excerpt}</p>
         </div>
     )

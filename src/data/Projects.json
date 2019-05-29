@@ -2,7 +2,7 @@
     {
         "title": "This Website",
         "imgTitle": "my-site",
-        "description": "I built this website using ReactJS and GatsbyJS. Additionally, it was deployed using Netlify",
+        "description": "I built this website using ReactJS and GatsbyJS. I placed it online using Netlify and Git.",
         "techUsed": ["ReactJS, GatsbyJS, HTML, CSS, Javascript, Netlify, Git"]  
     },
     {

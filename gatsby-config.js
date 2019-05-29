@@ -9,7 +9,7 @@ module.exports = {
         ` to help my clients improve their online presence.\n\n`+
         `When I\'m not doing that, you'll typically find me self teaching so I can keep up with the latest trends.`+
         ` I also really enjoy playing drums, listening to music, and watching movies.\n\n`+
-        `In the fall of 2018 I graduated with a degree in computer science from California State University, Northidge.` +
+        `In the fall of 2018 I graduated with a degree in computer science from California State University, Northridge.` +
         ` I took a liking towards web development because it's a field that's always changing and growing so of course, I had to be a part of it.\n\n`+
         ` If you're interested to see what I could offer you, take a look at my resume using the link below.`+
         ` Additionally, you could reach me through the contact link above, or any of my social links at the bottom of the page.`
@@ -74,7 +74,7 @@ module.exports = {
         background_color: `#2D3E36`,
         theme_color: `#2D3E36`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/bh_icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

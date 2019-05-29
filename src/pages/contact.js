@@ -5,10 +5,14 @@ const contact = props => {
     return (
         <Layout>
             <div className = "Contact">
-                <p>Coming Soon! </p>
-                {/* <div className = "FormContainer">
+                {/* <p>Coming Soon! </p> */}
+                <div className = "FormContainer">
                     <label htmlFor = "ContactForm"><h1>Contact</h1></label>
-                    <form id = "ContactForm" className = "ContactForm">
+                    <form 
+                        id = "ContactForm" 
+                        className = "ContactForm" 
+                        data-netlify="true" 
+                        data-netlify-honeypot="bot-field">
                         <div>
                             <label htmlFor= "name">Name</label>
                             <input name = "name" id = "name"/>
@@ -30,7 +34,7 @@ const contact = props => {
                         </div>
 
                     </form>
-                </div> */}
+                </div>
             </div>
         </Layout>
     );

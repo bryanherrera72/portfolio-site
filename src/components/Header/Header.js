@@ -21,7 +21,7 @@ const Header = (props) => (
               {data.site.siteMetadata.title}
             </Link>
           </h1>
-          <NavItems></NavItems>
+          <NavItems/>
         </div>
     )}
   />

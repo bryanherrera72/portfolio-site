@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "bryans-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My personal portfolio website. uses the gatsby web starter as a base",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Bryan Herrera <bryan.herrera72@gmail.com@gmail.com>",
   "dependencies": {
     "gatsby": "^2.4.3",
     "gatsby-image": "^2.0.41",

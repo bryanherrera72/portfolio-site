@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout/layout';
 import '../styles/contact.css';
 const contact = props => {
+
     return (
         <Layout>
             <div className = "Contact">
@@ -13,6 +14,8 @@ const contact = props => {
                         className = "ContactForm" 
                         data-netlify="true" 
                         data-netlify-honeypot="bot-field">
+                        
+                        <input type="hidden" name="form-name" value="ContactForm" />
                         <div>
                             <label htmlFor= "name">Name</label>
                             <input name = "name" id = "name"/>
@@ -30,7 +33,7 @@ const contact = props => {
                                 id = "description"></textarea>
                         </div>
                         <div>
-                            <button className = "Submit" type = "submit"></button>
+                            <button className = "Submit" type = "submit">Submit</button>
                         </div>
 
                     </form>

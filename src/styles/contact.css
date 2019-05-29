@@ -40,4 +40,8 @@ label{
   left: calc(100% - 150px);
   height:50%;
   width: 150px;  
+  border-radius: 2px;
+  border:none;
+  background-color:transparent;
+  cursor:pointer;
 }

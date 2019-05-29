@@ -6,8 +6,8 @@ const navItems = props => {
         <div className = "NavItems">
             <NavItem toPage = "/about/">About</NavItem>
             <NavItem toPage = "/projects/">Projects</NavItem>
-            <NavItem toPage = "/contact/">Contact</NavItem>
             <NavItem toPage = "/blog/">Blog</NavItem>
+            <NavItem toPage = "/contact/">Contact</NavItem>
         </div>
     );
 }

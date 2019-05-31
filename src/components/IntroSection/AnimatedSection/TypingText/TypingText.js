@@ -7,15 +7,16 @@ class TypingText extends Component{
     componentDidMount(){
         let typedOptions = {
             strings: [
-                'I\'m Bryan Herrera.^1500\nI love creating.',
-                'I\'m Bryan Herrera.\nI love coding.',
-                'I\'m Bryan Herrera.\nI love learning.',
-                'I\'m Bryan Herrera.\nAll of the above.',
-                ':)^1000\nLet\'s chat^2000\n\n&nbsp;&#65086;',
-                ':)\nLet\'s chat\n',
-                ':)\nLet\'s chat\n\n&nbsp;&#65086;'],
+                `I'm Bryan Herrera.^1500\nI love creating.`,
+                `I'm Bryan Herrera.\nI love coding.`,
+                `I'm Bryan Herrera.\nI love learning.`,
+                `I'm Bryan Herrera.\nAll of the above.`,
+                `:)^1000\nLet\'s chat^2000\n\n&nbsp;&#65086;`,
+                `:)\nLet\'s chat\n`,
+                `:)\nLet\'s chat\n\n&nbsp;&#65086;`],
             typeSpeed: 45,
             backSpeed: 20,
+            startDelay: 700,
             backDelay: 600,
             cursorChar: '|',
             loop:true,
@@ -25,7 +26,7 @@ class TypingText extends Component{
         
     }
     componentWillUnmount(){
-        
+        this.name=null;
     }
 
     render(){

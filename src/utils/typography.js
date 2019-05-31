@@ -19,9 +19,6 @@ const typography = new Typography({
       name: 'Yanone Kaffeesatz',
       styles: [
         '400',
-        '400i',
-        '700',
-        '700i',
       ],
     },
   ],

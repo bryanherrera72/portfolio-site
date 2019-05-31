@@ -11,22 +11,23 @@ class TypingText extends Component{
                 `I'm Bryan Herrera.\nI love coding.`,
                 `I'm Bryan Herrera.\nI love learning.`,
                 `I'm Bryan Herrera.\nAll of the above.`,
-                `:)^1000\nLet\'s chat^2000\n\n&nbsp;&#65086;`,
-                `:)\nLet\'s chat\n`,
-                `:)\nLet\'s chat\n\n&nbsp;&#65086;`],
+                `:)^1000\nLet's chat^2000\n\n&nbsp;&#65086;`,
+                `:)\nLet's chat\n`,
+                `:)\nLet's chat\n\n&nbsp;&#65086;`],
             typeSpeed: 45,
-            backSpeed: 20,
+            backSpeed: 45,
             startDelay: 700,
             backDelay: 600,
             cursorChar: '|',
             loop:true,
             smartBackspace: true
         };
-        this.name = new Typed (this.name,typedOptions);
+        this.name = new Typed (this.el, typedOptions);
         
     }
     componentWillUnmount(){
-        this.name=null;
+        if(this.name)
+            this.name.destroy();
     }
 
     render(){
@@ -35,7 +36,7 @@ class TypingText extends Component{
             <div className = "TypingText" >
                 <span 
                     style = {{ 'whiteSpace':'pre'}} 
-                    ref = {(name)=>{this.name = name}}></span>
+                    ref = {(name)=>{this.el = name}}></span>
                     
             </div>
         );

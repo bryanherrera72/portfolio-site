@@ -1,8 +1,6 @@
 .TypingText{ 
     vertical-align: middle;
     bottom:20px;
- 
+    padding:40px;
 }
-.TypingText span{
-    padding: 20px;
-}
+

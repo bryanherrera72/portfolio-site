@@ -14,7 +14,12 @@ const typography = new Typography({
   scaleRatio: 2,
   headerWeight: 400,
   googleFonts: [
-    
+    {
+      name: 'Lato',
+      styles: [
+        '400',
+      ],
+    },
     {
       name: 'Yanone Kaffeesatz',
       styles: [
@@ -23,10 +28,10 @@ const typography = new Typography({
     },
   ],
   headerFontFamily: ['Yanone Kaffeesatz', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
-  bodyFontFamily: ['Yanone Kaffeesatz', 'serif'],
+  bodyFontFamily: ['Lato', 'Helvetica Neue','serif'],
 });
 
 export const { scale, rhythm, options } = typography
-// headerFontFamily: ['Oswald', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
+// headerFontFamily: ['Yanone Kaffeesatz', 'Oswald', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
 // bodyFontFamily: ['PT Sans', 'serif'],
 export default typography;

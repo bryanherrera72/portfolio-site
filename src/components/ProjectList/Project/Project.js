@@ -6,7 +6,7 @@ const project = props => {
         <>
         <div className = "Project">
             <div className = "TitleAndImg"> 
-                <span className = "Title">{props.title}</span>
+                <h1 className = "Title">{props.title}</h1>
                 <span className = "Img">
                     <ProjectImg imgSrc = {props.imgSrc}/>
                 </span>

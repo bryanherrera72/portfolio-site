@@ -5,6 +5,7 @@
     height:100%;
     background-color: #293932;
     z-index: 500;
+    overflow-y:hidden;
 }
 
 .FooterItems{
@@ -13,5 +14,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:20px;
+    /* padding:20px; */
 }

@@ -34,11 +34,9 @@ class TypingText extends Component{
         return (
             // unfortunately have to include this div for Typed to work 
             <div className = "TypingText" >
-                <h1>
                 <span 
                     style = {{ 'whiteSpace':'pre'}} 
                     ref = {(name)=>{this.el = name}}></span>
-                    </h1>
             </div>
         );
     }

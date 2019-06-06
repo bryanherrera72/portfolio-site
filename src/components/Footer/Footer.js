@@ -24,11 +24,11 @@ const footer = props =>{
                 <br/>
                 <div>
                     <SocialLink 
-                        color = {"#50b4f1"} link = {"https://www.twitter.com/"}>
+                        color = {"#50b4f1"} link = {"https://www.twitter.com/B_Manng"}>
                             TWITTER
                     </SocialLink>
                     <SocialLink 
-                        color = {"#C13584"} link = {"https://twitter.com/PupusaParadise"}>
+                        color = {"#C13584"} link = {"https://twitter.com/b_manng"}>
                             INSTAGRAM
                     </SocialLink>
                     <SocialLink 

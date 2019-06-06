@@ -13,6 +13,7 @@ const projectList = props => (
                             imgTitle
                             description
                             techUsed
+                            link
                         }
                     }
                 }
@@ -25,7 +26,7 @@ const projectList = props => (
                     return (<Project 
                                 key = {index}
                                 title={project.node.title} 
-                                
+                                link={project.node.link}
                                 imgSrc={project.node.imgTitle} 
                                 description={project.node.description}
                                 techUsed={project.node.techUsed}/>);

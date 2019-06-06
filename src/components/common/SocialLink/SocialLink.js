@@ -2,7 +2,7 @@ import React from 'react';
 import './SocialLink.css';
 const button = props => {
     let color = '#718a82';
-    let link = "#";
+    let link = '#';
 
     if(props.color){
         color = props.color;
@@ -30,7 +30,7 @@ const button = props => {
     }
     return(
         <>
-            <a href = {props.link} style = {styles}>{props.children}</a>
+            <a href = {link} style = {styles}>{props.children}</a>
         </>
     );
 }

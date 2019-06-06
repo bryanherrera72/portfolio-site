@@ -16,7 +16,6 @@ class TypingText extends Component{
                 `:)\nLet's chat\n\n&nbsp;&#65086;`],
             typeSpeed: 45,
             backSpeed: 45,
-            startDelay: 700,
             backDelay: 600,
             cursorChar: '|',
             loop:true,

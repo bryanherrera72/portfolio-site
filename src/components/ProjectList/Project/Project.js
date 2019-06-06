@@ -14,10 +14,10 @@ const project = props => {
             <div className="DescContainer">
                 <div className = "Description">{props.description}</div>
                 <div className = "TechUsed">
-                    {props.techUsed.join(', ')}
-                    <div> Just adding this here. might place a link to the projects.</div>
+                    Tech Used: {props.techUsed.join(', ')}
                 </div>
-                
+                <br/>
+                <p>Find the project <a href = {props.link} style= {{color: 'white'}}>here =></a></p>
             </div>
         </div>
         <br/>

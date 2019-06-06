@@ -6,12 +6,13 @@ const contact = props => {
     return (
         <Layout>
             <div className = "Contact">
-                {/* <p>Coming Soon! </p> */}
                 <div className = "FormContainer">
                     <label htmlFor = "ContactForm"><h1>Contact</h1></label>
                     <form 
                         id = "ContactForm" 
                         className = "ContactForm" 
+                        name="ContactForm"
+                        method="post"
                         data-netlify="true" 
                         data-netlify-honeypot="bot-field">
                         

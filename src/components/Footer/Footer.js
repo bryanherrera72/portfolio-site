@@ -28,7 +28,7 @@ const footer = props =>{
                             TWITTER
                     </SocialLink>
                     <SocialLink 
-                        color = {"#C13584"} link = {"https://twitter.com/b_manng"}>
+                        color = {"#C13584"} link = {"https://instagram.com/b_manng"}>
                             INSTAGRAM
                     </SocialLink>
                     <SocialLink 

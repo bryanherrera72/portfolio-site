@@ -6,7 +6,8 @@ import "./layout.css"
 
 class Layout extends Component{
   state = {
-    viewAtTop: true
+    viewAtTop: true,
+    navExpanded: false
   }
 
   scrollEventHandler = ()=> {
@@ -21,6 +22,12 @@ class Layout extends Component{
     }
 
   }
+  navExpandHandler = ()=>{
+    console.log("expand");
+    this.setState((state)=>{
+      return { navExpanded: !state.navExpanded };
+    });
+  }
   componentDidMount(){
     window.addEventListener('scroll', this.scrollEventHandler);
   }
@@ -32,7 +39,10 @@ class Layout extends Component{
   render(){
     return(
       <div className = "Layout">
-        <Header viewAtTop = {this.state.viewAtTop}/>
+        <Header 
+          viewAtTop = {this.state.viewAtTop} 
+          expandNav={this.navExpandHandler}
+          expanded = {this.state.navExpanded}/>
         <main className = "Content">{this.props.children}</main>
         <Footer/>
       </div>

@@ -1,0 +1,23 @@
+import React from 'react'
+
+const hamburger = props => (
+    <svg width="108" height="52" viewBox="0 0 108 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d)">
+        <path d="M4 4C4 2.89543 4.89543 2 6 2L102 2C103.105 2 104 2.89543 104 4V12H4V4Z" fill="#E8E8D7"/>
+        <path d="M4 36H104V44C104 45.1046 103.105 46 102 46H6C4.89543 46 4 45.1046 4 44V36Z" fill="#E8E8D7"/>
+        <rect x="4" y="19" width="100" height="10" fill="#E8E8D7"/>
+        </g>
+        <defs>
+        <filter id="filter0_d" x="0" y="0" width="108" height="52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+        <feOffset dy="2"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+        </filter>
+        </defs>
+    </svg>
+);
+export default hamburger;

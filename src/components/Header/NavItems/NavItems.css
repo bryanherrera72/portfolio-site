@@ -1,7 +1,54 @@
 .NavItems{
     position: relative;
     display: flex; 
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 500px;
+}
+.Desktop{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.MobileNav{
+    display:none;
+}
+.MobileIcon{
+    display:none;
+}
+@media(max-width: 500px){
+    .Desktop{
+        display:none;
+        
+    }
+    .MobileIcon{
+        display:inline-flex;
+        margin-top:5px;
+        cursor:pointer;
+        background-color:transparent;
+    }
+    .MobileNav{
+        position:fixed;
+        top: -15px;
+        width: 100%;
+        height: 300px;
+        font-size:1.2em;
+        z-index:400;
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #708A82;
+        transition-property: height;
+        transition-duration:1s;
+        padding-bottom:10px;
+    }
+    .closed{
+        height:0px;
+    }
+    .NavItems{
+        position: relative;
+        flex-direction:column;
+        margin:10px;
+    }
 }

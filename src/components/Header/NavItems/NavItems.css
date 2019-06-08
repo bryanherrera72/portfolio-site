@@ -38,9 +38,10 @@
         flex-direction:column;
         justify-content: flex-end;
         align-items: center;
-        background-color: #708A82;
+        background-color: #2D3E36;
+        box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, .2); 
         transition-property: height;
-        transition-duration:1s;
+        transition-duration:.5s;
         padding-bottom:10px;
     }
     .closed{

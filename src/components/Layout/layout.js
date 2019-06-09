@@ -28,6 +28,7 @@ class Layout extends Component{
       return { navExpanded: !state.navExpanded };
     });
   }
+  
   componentDidMount(){
     window.addEventListener('scroll', this.scrollEventHandler);
   }

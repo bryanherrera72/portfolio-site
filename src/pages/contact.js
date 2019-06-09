@@ -29,7 +29,7 @@ const contact = props => {
                             <label htmlFor= "description">Description</label>
                             <textarea 
                                 rows="5" 
-                                cols="40" 
+                                cols="35" 
                                 name = "description" 
                                 id = "description"></textarea>
                         </div>
